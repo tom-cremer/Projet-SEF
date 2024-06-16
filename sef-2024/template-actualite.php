@@ -25,38 +25,13 @@
             <img src="https://placeholder.co/300x200" alt="Événement à venir" itemprop="image">
             <div class="event-info">
                 <h3 itemprop="name">Événement à venir</h3>
+                <p class="date" itemprop="date">04/08/2024</p>
                 <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
                     communautaires.</p>
                 <a href="#" class="event-link" itemprop="url">Voir l'article</a>
             </div>
         </article>
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement à venir" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement à venir</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement à venir" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement à venir</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement à venir" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement à venir</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
+
     </div>
     <div class="event-button">
         <a href="#" class="see-more">Voir Plus</a>
@@ -66,33 +41,6 @@
 <section class="event-section">
     <h2>Événement Passée</h2>
     <div class="event-cards" itemscope itemtype="https://schema.org/Event">
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement passée" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement passée" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
-        <article class="event-card">
-            <img src="https://placeholder.co/300x200" alt="Événement passée" itemprop="image">
-            <div class="event-info">
-                <h3 itemprop="name">Événement</h3>
-                <p itemprop="description">Grand barbecue de soutien ce samedi 22 juin à 12h pour financer nos projets
-                    communautaires.</p>
-                <a href="#" class="event-link" itemprop="url">Voir l'article</a>
-            </div>
-        </article>
         <article class="event-card">
             <img src="https://placeholder.co/300x200" alt="Événement passée" itemprop="image">
             <div class="event-info">
