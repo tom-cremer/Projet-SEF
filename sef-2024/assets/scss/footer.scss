@@ -1,0 +1,141 @@
+
+.site-footer {
+  background-color: #f1f1f1;
+  padding: 40px 40px 10px;
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 50px;
+        margin-right: 10px;
+      }
+
+      span {
+        font-size: 1.5em;
+        color: $dark-blue;
+        font-weight: bold;
+      }
+    }
+
+    .footer-column {
+      h4 {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: $dark-blue;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 8px;
+
+          a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.3);
+            font-size: 1em;
+            font-weight: 500;
+
+            &:hover {
+              color: $blue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      p{
+        font-weight: 500;
+        color: $dark-blue;
+      }
+
+      .mail {
+        text-decoration: none;
+        color: $dark-blue;
+        font-weight: 500;
+        &:hover {
+          color: $blue;
+        }
+      }
+      .contact-button {
+        background-color: #5AB4FF;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+
+        &:hover {
+          background-color: #4a9dd9;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 10px;
+
+    p {
+      font-size: 0.9em;
+      color: #5d5d5d;
+
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+
+      .footer-column {
+        margin-bottom: 20px;
+
+        ul {
+          li {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .footer-contact {
+        width: 100%;
+        text-align: center;
+
+        .contact-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

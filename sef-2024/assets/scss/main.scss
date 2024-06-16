@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import "reset";
+@import "menu";
+@import "variables";
+@import "decoration";
+@import "accordion";
+@import "contact";
+@import "footer";
+@import "page-article";
+
+body {
+  font-family: 'Lexend', Helvetica, "Montserrat", "Arial", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.first-section {
+  margin: 220px auto;
+  .content-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .text {
+      max-width: 430px;
+      margin-right: 50px;
+
+      .title {
+        line-height: 120%;
+        font-size: 3em;
+        font-weight: bold;
+        color: #223843;
+      }
+
+      .highlight {
+        color: #5ab4ff;
+      }
+
+      p {
+        line-height: 120%;
+        margin: 20px 0 30px;
+        color: #333;
+      }
+    }
+
+    .squares {
+      border-radius: 15px;
+      position: relative;
+      .statistics {
+        padding: 5px;
+        width: 120px;
+        aspect-ratio: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        background: $white;
+        .number {
+          color: $blue;
+          font-size: 2.6em;
+          font-weight: bold;
+        }
+        .label {
+          font-weight: 500;
+        }
+      }
+      .relate {
+        width: 420px;
+      }
+
+      .absolute {
+        position: absolute;
+        animation: floatAnimation ease-in-out infinite;
+      }
+
+      .absolute:nth-child(2) {
+        top: 0;
+        left: -15%;
+        animation-duration: 7s;
+      }
+
+      .absolute:nth-child(3) {
+        bottom: -10%;
+        left: -5%;
+        animation-duration: 5s;
+      }
+
+      .absolute:nth-child(4) {
+
+        bottom: 5%;
+        right: -10%;
+        animation-duration: 6s;
+      }
+
+      .absolute:nth-child(5) {
+        top: -8%;
+        right: 2%;
+        animation-duration: 8s;
+      }
+    }
+  }
+}
+
+.citation {
+  padding: 67px 0;
+  text-align: center;
+  background: radial-gradient(#93CEF9 0%, #52B6FF 100%);
+  margin-bottom: 100px;
+
+  .title-citation {
+    margin: auto;
+    line-height: 130%;
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    max-width: 600px;
+  }
+}
+
+.btn {
+  background-color: #5ab4ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 40px;
+  font-size: 1em;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #4a9dd9;
+  }
+}
+
+
+.big {
+  padding: 10px 60px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.square {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.second-section {
+  max-width: 900px;
+  min-height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+
+  .content-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      max-width: 400px;
+      margin: 0 20px;
+
+      .title {
+        @include title();
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #333;
+      }
+    }
+  }
+}
+
+.where-to-find {
+  display: flex;
+  gap: 15px;
+}
+
+
+@media screen and (max-width: 1130px) {
+  .first-section {
+    .content-block {
+      flex-direction: column;
+      gap: 90px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .first-section {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .text {
+      margin-right: 0;
+
+    }
+
+    .squares {
+      justify-content: center;
+    }
+  }
+
+  .second-section {
+    .content-block {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 30px;
+
+      &:nth-child(2) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+  }
+
+  .square {
+    margin-bottom: 20px;
+
+    &.small {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .absolute {
+    @include hidden;
+  }
+
+  .relate {
+    width: 350px;
+  }
+}

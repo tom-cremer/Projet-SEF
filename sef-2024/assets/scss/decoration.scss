@@ -1,0 +1,66 @@
+@import "variables";
+.color-back {
+  position: absolute;
+  aspect-ratio: 1;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+}
+
+.gradient {
+  background: radial-gradient(rgba(82, 182, 255, 0.4) 0%, $smoke 70%);
+}
+
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.top {
+  top: 0;
+}
+.middle {
+  top: 50%;
+}
+.down {
+  bottom: 0;
+}
+
+.b-8 {
+  border: #52B6FF solid 8px;
+}
+.b-6 {
+  border: #52B6FF solid 6px ;
+}
+
+.b-4 {
+  border: #52B6FF solid 4px ;
+}
+
+.b-3 {
+  border: #52B6FF solid 3px ;
+}
+
+.xxl{
+  width: 80%;
+}
+.xl {
+  width: 70%;
+}
+.large {
+  width: 60%;
+}
+.med {
+  width: 50%;
+}
+.small {
+  width: 40%;
+}
+.tiny {
+  width: 30%;
+}
+.s-tiny {
+  width: 20%;
+}

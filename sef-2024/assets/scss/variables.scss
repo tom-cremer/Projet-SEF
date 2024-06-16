@@ -1,0 +1,29 @@
+$white: white;
+$smoke: #f9f9f9;
+$blue: #52B6FF;
+$dark-blue: #223843;
+
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@mixin title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #223843;
+}
+
+@mixin desc {
+  line-height: 120%;
+  margin: 20px 0 30px;
+  color: #333;
+}
