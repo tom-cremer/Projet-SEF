@@ -813,6 +813,94 @@ table {
     margin-top: 20px;
   }
 }
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.article-single {
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.article-single .article-header {
+  margin-bottom: 10px;
+}
+.article-single .article-header .title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #223843;
+  margin-bottom: 10px;
+}
+.article-single .article-header time {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 0.9em;
+}
+.article-single .image {
+  width: 100%;
+}
+.article-single .adresse {
+  margin-top: 25px;
+  background: white;
+  padding: 10px 20px;
+  width: 100%;
+}
+.article-single .adresse .title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #223843;
+  font-size: 1.3em;
+}
+.article-single .adresse .pin, .article-single .adresse .hours {
+  color: #333;
+  line-height: 120%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.article-single .description {
+  width: 600px;
+  margin-top: 50px;
+}
+.article-single .description .title {
+  font-weight: bold;
+  font-size: 2em;
+  color: #223843;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.article-single .description p {
+  line-height: 120%;
+  margin: 20px 0 30px;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .article-single {
+    flex-direction: column;
+    align-items: center;
+  }
+  .article-single .aside {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .article-single .image {
+    width: 100%;
+  }
+  .article-single .description {
+    width: 90%;
+  }
+}
 body {
   font-family: "Lexend", Helvetica, "Montserrat", "Arial", sans-serif;
   background-color: #f9f9f9;
