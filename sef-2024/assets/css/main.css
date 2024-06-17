@@ -536,6 +536,17 @@ table {
     width: 90%;
   }
 }
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .site-footer {
   background-color: #f1f1f1;
   padding: 70px 50px 10px;
@@ -977,7 +988,6 @@ table {
   max-width: 1000px;
   margin: 20px auto;
   padding: 20px;
-  background: #f9f9f9;
   text-align: center;
 }
 .hebergement h2 {

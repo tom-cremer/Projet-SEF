@@ -1,6 +1,11 @@
 <?php /* Template Name: Page "Hébergement" */ ?>
 <?php get_header(); ?>
+<div class="color-back top left med gradient"></div>
+<div class="color-back top left b-6 med"></div>
+<div class="color-back top left b-4 small"></div>
+<div class="color-back top left b-3 s-tiny"></div>
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
+
     <section class="hebergement">
         <h2><?= get_field('titre'); ?></h2>
         <p class="subtitle"><?= get_field('subtitle'); ?></p>

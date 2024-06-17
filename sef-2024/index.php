@@ -14,7 +14,9 @@
                 <h2 class="title"> <?= get_field('title_section1'); ?><span
                             class="highlight"><?= get_field('word_highlight'); ?></span></h2>
                 <p><?= get_field('description_section1'); ?></p>
-                <a href="#Contact" class="btn big">Contact</a>
+                <?php foreach (pf_get_navigation_links('contact') as $link): ?>
+                    <a href="<?= $link->url ?>" class="btn big" itemprop="url"><?= $link->label ?></a>
+                <?php endforeach; ?>
             </div>
             <div class="squares">
                 <?php if (get_field('presentation_image')): ?>
