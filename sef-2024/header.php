@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo">
+    <div class="logo" itemscope itemtype="https://schema.org/Organization">
         <?php if (get_field('brand_logo')): ?>
             <img src="<?= get_field('brand_logo')['url']; ?>" alt="<?= get_field('brand_logo')['alt']; ?>">
         <?php else: ?>
@@ -22,7 +22,11 @@
                       stroke-linejoin="round" stroke-width="5"/>
             </svg>
         <?php endif; ?>
-        <h1><?= get_field('brand_name'); ?></h1>
+        <?php if (get_field('brand_name')): ?>
+            <h1 itemprop="name"><?= get_field('brand_name'); ?></h1>
+        <?php else: ?>
+            <h1 itemprop="name">SEF</h1>
+        <?php endif; ?>
     </div>
     <input type="checkbox" id="burger" class="menu-checkbox hidden" autocomplete="off" aria-expanded="false">
     <label for="burger" class="burger-button">

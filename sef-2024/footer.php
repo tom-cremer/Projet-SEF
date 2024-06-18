@@ -16,8 +16,6 @@
             <?php else: ?>
                 <span itemprop="name">SEF</span>
             <?php endif; ?>
-
-
         </div>
         <div class="footer-column" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <h4>NAVIGATION</h4>
@@ -30,9 +28,9 @@
         <div class="footer-column" itemscope itemtype="https://schema.org/SiteNavigationElement">
             <h4>LEGAL</h4>
             <ul>
-                <li><a href="#" itemprop="url">Mentions Légales</a></li>
-                <li><a href="#" itemprop="url">Politique de Confidentialité</a></li>
-                <li><a href="#" itemprop="url">Conditions Générales</a></li>
+                <?php foreach (pf_get_navigation_links('footer_legal') as $link): ?>
+                    <li><a href="<?= $link->url ?>" itemprop="url"><?= $link->label ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </div>
 
