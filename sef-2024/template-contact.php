@@ -30,12 +30,26 @@ if (have_posts()): while (have_posts()): the_post(); // Ouverture de "The Loop" 
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                     <circle cx="12" cy="10" r="3"/>
                 </svg>
-                <span itemprop="streetAddress"><?= get_field('contact_infos')['address']['rue']; ?></span>, <span itemprop="postalCode"><?= get_field('contact_infos')['address']['postal_code']; ?></span> <span
+                <span itemprop="streetAddress"><?= get_field('contact_infos')['address']['rue']; ?></span> <span itemprop="postalCode"><?= get_field('contact_infos')['address']['postal_code']; ?></span> <span
                         itemprop="addressLocality"><?= get_field('contact_infos')['address']['localite']; ?></span></p>
         </address>
     </div>
-    <form class="contact-form" action="#" method="post" itemscope itemtype="https://schema.org/ContactForm">
-        <fieldset class="form-group">
+    <div class="contact-form" itemscope itemtype="https://schema.org/ContactForm">
+        <?= do_shortcode('[contact-form-7 id="e3f98a0" title="Formulaire de contact" class:contact-form]'); ?>
+    </div>
+</section>
+
+<div class="color-back right top xl gradient"></div>
+<div class="color-back right top b-8 xl"></div>
+<div class="color-back right top b-6 med"></div>
+<div class="color-back right top b-4 small"></div>
+<div class="color-back right top b-3 s-tiny"></div>
+
+<?php endwhile; endif; // Fin de "The Loop" ?>
+<?php get_footer(); ?>
+
+
+<!--        <fieldset class="form-group">
             <label for="nom">Nom</label>
             <input type="text" id="nom" name="nom" placeholder="Doe" required>
         </fieldset>
@@ -49,7 +63,7 @@ if (have_posts()): while (have_posts()): the_post(); // Ouverture de "The Loop" 
         </fieldset>
         <fieldset class="form-group">
             <label for="telephone">Numéro de téléphone</label>
-            <input type="tel" id="telephone" name="telephone" placeholder="<?= get_field('contact_infos')['phone']; ?>" required>
+            <input type="tel" id="telephone" name="telephone" placeholder="<?php /*= get_field('contact_infos')['phone']; */?>" required>
         </fieldset>
         <fieldset class="form-group">
             <label for="sujet">Sujet</label>
@@ -59,15 +73,4 @@ if (have_posts()): while (have_posts()): the_post(); // Ouverture de "The Loop" 
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
         </fieldset>
-        <button type="submit">Envoyer</button>
-    </form>
-</section>
-
-<div class="color-back right top xl gradient"></div>
-<div class="color-back right top b-8 xl"></div>
-<div class="color-back right top b-6 med"></div>
-<div class="color-back right top b-4 small"></div>
-<div class="color-back right top b-3 s-tiny"></div>
-
-<?php endwhile; endif; // Fin de "The Loop" ?>
-<?php get_footer(); ?>
+        <button type="submit">Envoyer</button>-->
